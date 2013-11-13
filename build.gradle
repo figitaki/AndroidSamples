@@ -3,23 +3,26 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:0.6.3'
+        classpath 'com.android.tools.build:gradle:0.6.+'
     }
 }
 apply plugin: 'android'
 
-dependencies {
-    compile 'com.android.support:support-v4:18.0.+'
+repositories {
+    mavenCentral()
 }
 
 android {
-    compileSdkVersion 'android-17'
-    buildToolsVersion '19.0.0'
+    compileSdkVersion 19
+    buildToolsVersion "19.0.0"
 
-    buildTypes {
-        release {
-            runProguard false
-            proguardFile getDefaultProguardFile('proguard-android.txt')
-        }
+    defaultConfig {
+        minSdkVersion 11
+        targetSdkVersion 18
     }
+}
+
+dependencies {
+	compile 'com.android.support:appcompat-v7:+'
+	compile 'com.android.support:support-v4:18.0.0'
 }
