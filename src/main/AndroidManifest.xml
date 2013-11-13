@@ -21,5 +21,19 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.figitaki.androidsamples.MainActivity" />
         </activity>
+        <activity android:name="com.figitaki.androidsamples.SettingsActivity"
+                  android:label="@string/title_activity_settings"
+                  android:parentActivityName="com.figitaki.androidsamples.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.figitaki.androidsamples.MainActivity" />
+        </activity>
+        <activity android:name="com.figitaki.androidsamples.SearchActivity"
+                  android:label="@string/title_activity_search"
+                  android:parentActivityName="com.figitaki.androidsamples.MainActivity">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="com.figitaki.androidsamples.MainActivity" />
+        </activity>
     </application>
 </manifest>

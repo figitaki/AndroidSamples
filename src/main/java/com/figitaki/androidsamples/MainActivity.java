@@ -55,11 +55,13 @@ public class MainActivity extends Activity {
 
     /** Called when the search bar is pressed */
     private void openSearch() {
-        // TODO: Implement a search bar;
+        Intent intent = new Intent(this, SearchActivity.class);
+        startActivity(intent);
     }
 
     /** Called when the settings action is selected */
     private void openSettings() {
-        // TODO: Create a settings activity
+        Intent intent = new Intent(this, SettingsActivity.class);
+        startActivity(intent);
     }
 }
